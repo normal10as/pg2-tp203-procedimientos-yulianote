@@ -1,0 +1,11 @@
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\bin\Debug\Procedimientos.exe.config
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\bin\Debug\Procedimientos.exe
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\bin\Debug\Procedimientos.pdb
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\bin\Debug\Procedimientos.xml
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\obj\Debug\Procedimientos.vbprojAssemblyReference.cache
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\obj\Debug\Procedimientos.Resources.resources
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\obj\Debug\Procedimientos.vbproj.GenerateResource.cache
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\obj\Debug\Procedimientos.vbproj.CoreCompileInputs.cache
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\obj\Debug\Procedimientos.exe
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\obj\Debug\Procedimientos.xml
+C:\Users\Eu\source\repos\repos\pg2-tp203-procedimientos-yulianote\Procedimientos\obj\Debug\Procedimientos.pdb
