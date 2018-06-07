@@ -68,6 +68,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="coleccion.vb" />
     <Compile Include="ejercicio3_01.vb" />
     <Compile Include="ejercicio3_02.vb" />
     <Compile Include="ejercicio3_03.vb" />

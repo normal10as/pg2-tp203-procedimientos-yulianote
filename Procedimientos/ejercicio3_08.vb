@@ -8,7 +8,7 @@
     Sub main()
         Console.WriteLine("     SUMA     ")
         Console.WriteLine("Dos parametros")
-        Resultado(10, 2)
+        calcular(10, 2)
         Console.WriteLine("Tres parametros")
         Resultado(operacion.suma, 10, 2, 5)
         Console.WriteLine("Cuatro parametros")
@@ -39,21 +39,20 @@
         Resultado(operacion.division, 10, 2, 5, 7)
     End Sub
 
-
-    Private Function Resultado(ByRef valuno As Decimal, ByRef valdos As Decimal) As Decimal
+    Private Function calcular(ByRef valuno As Decimal, ByRef valdos As Decimal) As Decimal
         Return Resultado(operacion.suma, valuno, valdos)
     End Function
 
-    Private Function Resultado(ByRef op As Byte, ByRef valuno As Decimal, ByRef valdos As Decimal, ByRef valtres As Decimal) As Decimal
-        Return Resultado(op, Resultado(op, valuno, valdos), valtres)
+    Private Function Calcular(op As operacion, ByRef valuno As Decimal, ByRef valdos As Decimal, ByRef valtres As Decimal) As Decimal
+        Return Resultado(op, valuno, valdos, valtres)
     End Function
 
-    Private Function Resultado(ByRef op As Byte, ByRef valuno As Decimal, ByRef valdos As Decimal, ByRef valtres As Decimal, ByRef valcua As Decimal) As Decimal
-        Return Resultado(op, Resultado(op, Resultado(op, valuno, valdos), valtres), valcua)
+    Private Function Calcular(op As operacion, ByRef valuno As Decimal, ByRef valdos As Decimal, ByRef valtres As Decimal, ByRef valcua As Decimal) As Decimal
+        Return Resultado(op, valuno, valdos, valtres, valcua)
     End Function
 
-    Private Function Resultado(ByRef op As Byte, ByRef valuno As Decimal, ByRef valdos As Decimal) As Decimal
-        Dim final As Decimal = 0
+    Private Function Resultado(ByRef op As Byte, ByRef valuno As Single, ByRef valdos As Single) As Single
+        Dim final As Single = 0
         Select Case op
             Case 1
                 final = valuno + valdos
@@ -67,6 +66,44 @@
             Case 4
                 final = valuno * valdos
                 Console.WriteLine(valuno & " * " & valdos & " = " & final)
+        End Select
+        Return final
+    End Function
+
+    Private Function Resultado(ByRef op As Byte, ByRef valuno As Single, ByRef valdos As Single, ByRef valtres As Single) As Single
+        Dim final As Decimal = 0
+        Select Case op
+            Case 1
+                final = valuno + valdos + valtres
+                Console.WriteLine(valuno & " + " & valdos & " + " & valtres & " = " & final)
+            Case 2
+                final = valuno - valdos - valtres
+                Console.WriteLine(valuno & " - " & valdos & " - " & valtres & " = " & final)
+            Case 3
+                final = valuno / valdos / valtres
+                Console.WriteLine(valuno & " / " & valdos & " / " & valtres & " = " & final)
+            Case 4
+                final = valuno * valdos * valtres
+                Console.WriteLine(valuno & " * " & valdos & " * " & valtres & " = " & final)
+        End Select
+        Return final
+    End Function
+
+    Private Function Resultado(ByRef op As Byte, ByRef valuno As Single, ByRef valdos As Single, ByRef valtres As Single, ByRef valcu As Single) As Single
+        Dim final As Single = 0
+        Select Case op
+            Case 1
+                final = valuno + valdos + valtres + valcu
+                Console.WriteLine(valuno & " + " & valdos & " + " & valtres & " + " & valcu & " = " & final)
+            Case 2
+                final = valuno - valdos - valtres - valcu
+                Console.WriteLine(valuno & " - " & valdos & " - " & valtres & " - " & valcu & " = " & final)
+            Case 3
+                final = valuno / valdos / valtres / valcu
+                Console.WriteLine(valuno & " / " & valdos & " / " & valtres & " / " & valcu & " = " & final)
+            Case 4
+                final = valuno * valdos * valtres * valcu
+                Console.WriteLine(valuno & " * " & valdos & " * " & valtres & " * " & valcu & " = " & final)
         End Select
         Return final
     End Function

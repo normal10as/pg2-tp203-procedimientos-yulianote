@@ -1,18 +1,14 @@
 ﻿Module ejercicio3_03
-    Private a As Double
     Sub main()
+        Dim a As Integer
         Console.WriteLine("ingrese el valor ")
         a = Console.ReadLine()
-        For contcinco As Single = 0 To 5 Step 1
-            Dim final As Double
-            final = potencia(a)
-
+        For contador As Single = 2 To 6 Step 1
+            Console.WriteLine(a & "^" & contador & " = " & potencia(a, contador))
         Next
     End Sub
-    Private Function potencia(ByRef a As Double) As Double
-        a = Math.Pow(a, 2)
-        Console.WriteLine(a)
-        Return a
+    Private Function potencia(ByRef numero As Integer, ByRef contador As Integer) As Integer
+        Return Math.Pow(numero, contador)
     End Function
 
 
